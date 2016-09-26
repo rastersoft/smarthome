@@ -4,18 +4,18 @@ project_name: smarthome
 *vala_version: 0.34
 
 if ATHOME
-custom: data/gedit_smarthome.plugin share/gedit/plugins/autovala
+custom: data/gedit_smarthome.plugin share/gedit/plugins/smarthome
 else
-custom: data/gedit_smarthome.plugin lib/gedit/plugins/autovala
+custom: data/gedit_smarthome.plugin lib/gedit/plugins/smarthome
 end
 
 
 vala_library: src/smarthome
 *namespace: gedit_smarthome
 if ATHOME
-vala_destination: share/gedit/plugins/autovala
+vala_destination: share/gedit/plugins/smarthome
 else
-vala_destination: lib/gedit/plugins/autovala
+vala_destination: lib/gedit/plugins/smarthome
 end
 *vala_check_package: atk
 *vala_check_package: gdk-3.0

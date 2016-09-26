@@ -6,13 +6,13 @@ if (ATHOME)
 	install(DIRECTORY
 		${CMAKE_CURRENT_SOURCE_DIR}/gedit_smarthome.plugin
 	DESTINATION
-		share/gedit/plugins/autovala
+		share/gedit/plugins/smarthome
 	)
 ELSE()
 	install(FILES
 		${CMAKE_CURRENT_SOURCE_DIR}/gedit_smarthome.plugin
 	DESTINATION
-		share/gedit/plugins/autovala
+		share/gedit/plugins/smarthome
 	)
 ENDIF()
 
@@ -21,13 +21,13 @@ else ()
 	install(DIRECTORY
 		${CMAKE_CURRENT_SOURCE_DIR}/gedit_smarthome.plugin
 	DESTINATION
-		lib/gedit/plugins/autovala
+		lib/gedit/plugins/smarthome
 	)
 ELSE()
 	install(FILES
 		${CMAKE_CURRENT_SOURCE_DIR}/gedit_smarthome.plugin
 	DESTINATION
-		lib/gedit/plugins/autovala
+		lib/gedit/plugins/smarthome
 	)
 ENDIF()
 
