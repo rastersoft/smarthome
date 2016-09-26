@@ -1,0 +1,39 @@
+### AutoVala Project ###
+autovala_version: 23
+project_name: smarthome
+*vala_version: 0.34
+
+if ATHOME
+custom: data/gedit_smarthome.plugin share/gedit/plugins/autovala
+else
+custom: data/gedit_smarthome.plugin lib/gedit/plugins/autovala
+end
+
+
+vala_library: src/smarthome
+*namespace: gedit_smarthome
+if ATHOME
+vala_destination: share/gedit/plugins/autovala
+else
+vala_destination: lib/gedit/plugins/autovala
+end
+*vala_check_package: atk
+*vala_check_package: gdk-3.0
+*vala_check_package: gedit
+*vala_check_package: gio-2.0
+*vala_check_package: glib-2.0
+*vala_check_package: gobject-2.0
+*vala_check_package: gobject-introspection-1.0
+*vala_check_package: gtk+-3.0
+*vala_check_package: gtksourceview-3.0
+*vala_check_package: libpeas-1.0
+*vala_source: smarthome.vala
+
+*po: po
+
+*translate: vala src/smarthome.vala
+
+*data: data/local
+
+*doc: doc
+

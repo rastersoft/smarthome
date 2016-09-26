@@ -1,0 +1,6 @@
+[Plugin]
+Module=gedit_smarthome.so
+IAge=3
+Name=Smarthome Plugin
+Description=Enables the Smarthome mode in Gedit
+Authors=Sergio Costas <raster@rastersoft.com>
