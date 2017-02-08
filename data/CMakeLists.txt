@@ -17,7 +17,7 @@ ELSE()
 ENDIF()
 
 else ()
-	IF(IS_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/gedit_smarthome.plugin)
+IF(IS_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/gedit_smarthome.plugin)
 	install(DIRECTORY
 		${CMAKE_CURRENT_SOURCE_DIR}/gedit_smarthome.plugin
 	DESTINATION
@@ -32,4 +32,3 @@ ELSE()
 ENDIF()
 
 endif ()
-

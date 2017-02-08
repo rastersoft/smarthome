@@ -11,7 +11,7 @@ set (VERSION "1.0.0")
 set (TESTSRCDIR "${CMAKE_SOURCE_DIR}")
 set (DOLLAR "$")
 
-configure_file (${CMAKE_SOURCE_DIR}/src/Config.vala.cmake ${CMAKE_BINARY_DIR}/src/Config.vala)
+configure_file (${CMAKE_SOURCE_DIR}/src/Config.vala.base ${CMAKE_BINARY_DIR}/src/Config.vala)
 add_definitions(-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
 configure_file (${CMAKE_CURRENT_SOURCE_DIR}/gedit_smarthome.pc ${CMAKE_CURRENT_BINARY_DIR}/gedit_smarthome.pc)
 configure_file (${CMAKE_CURRENT_SOURCE_DIR}/gedit_smarthome.deps ${CMAKE_CURRENT_BINARY_DIR}/gedit_smarthome.deps)
@@ -21,7 +21,7 @@ link_libraries ( ${DEPS_LIBRARIES} )
 link_directories ( ${DEPS_LIBRARY_DIRS} )
 find_package (Vala REQUIRED)
 include (ValaVersion)
-ensure_vala_version ("0.34" MINIMUM)
+ensure_vala_version ("0.32" MINIMUM)
 include (ValaPrecompile)
 
 set (VALA_PACKAGES ${VALA_PACKAGES} atk)
@@ -77,13 +77,12 @@ set (INSTALL_VAPI_gedit_smarthome "share/gedit/plugins/smarthome" )
 set (INSTALL_GIR_gedit_smarthome "share/gedit/plugins/smarthome" )
 set (INSTALL_PKGCONFIG_gedit_smarthome "share/gedit/plugins/smarthome" )
 else ()
-	set (INSTALL_LIBRARY_gedit_smarthome "lib/gedit/plugins/smarthome" )
+set (INSTALL_LIBRARY_gedit_smarthome "lib/gedit/plugins/smarthome" )
 set (INSTALL_INCLUDE_gedit_smarthome "lib/gedit/plugins/smarthome" )
 set (INSTALL_VAPI_gedit_smarthome "lib/gedit/plugins/smarthome" )
 set (INSTALL_GIR_gedit_smarthome "lib/gedit/plugins/smarthome" )
 set (INSTALL_PKGCONFIG_gedit_smarthome "lib/gedit/plugins/smarthome" )
 endif ()
-
 
 install(TARGETS
 	gedit_smarthome

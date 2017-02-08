@@ -1,0 +1,18 @@
+Source: smarthome
+Maintainer: Sergio Costas <rastersoft@gmail.com>
+Priority: optional
+Section: misc
+Build-Depends: build-essential, po-debconf, valac, libatk1.0-dev, libgtk-3-dev, gedit-dev, libglib2.0-dev, libgirepository1.0-dev, libgtksourceview-3.0-dev, libpeas-dev, cmake, gettext, pkg-config, gcc, g++, make, intltool
+
+Package: smarthome
+Architecture: any
+Version: 1.0.0
+Depends: libatk1.0-0, libglib2.0-0, libgtk-3-0, libpangocairo-1.0-0, libpango-1.0-0, libgdk-pixbuf2.0-0, libcairo-gobject2, libcairo2, libgtksourceview-3.0-1, libpeas-1.0-0, libgirepository-1.0-1
+Description: This is a plugin for GEdit 3 that enables the SmartHome mode. That
+ means that the *HOME* key will move the cursor to the first non-space
+ character in the line, and not to the first column. This is very
+ useful when using Gedit as a code editor.
+ .
+ The main advantage of this plugin over others, is that this has been
+ written in Vala, which compiles to native code and, thus, it is very lightweight.
+ .

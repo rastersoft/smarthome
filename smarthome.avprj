@@ -1,14 +1,13 @@
 ### AutoVala Project ###
-autovala_version: 23
+autovala_version: 24
 project_name: smarthome
-*vala_version: 0.34
+vala_version: 0.32
 
 if ATHOME
 custom: data/gedit_smarthome.plugin share/gedit/plugins/smarthome
 else
 custom: data/gedit_smarthome.plugin lib/gedit/plugins/smarthome
 end
-
 
 vala_library: src/smarthome
 *namespace: gedit_smarthome
@@ -28,6 +27,7 @@ end
 *vala_check_package: gtksourceview-3.0
 *vala_check_package: libpeas-1.0
 *vala_source: smarthome.vala
+
 
 *po: po
 
