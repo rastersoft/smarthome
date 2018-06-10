@@ -49,6 +49,6 @@ Preferences -> Plugins to enable the Autovala plugin.
 # Contacting the author #
 
 Sergio Costas Rodriguez (raster software vigo)  
-http://www.rastersoft.com  
 rastersoft@gmail.com  
-
+http://www.rastersoft.com  
+https://gitlab.com/rastersoft/smarthome
